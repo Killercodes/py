@@ -5,7 +5,8 @@ from datetime import datetime
 
 
 
-print(" --: PORT-SCANNER :--")
+#print(" --: PORT-SCANNER :--")
+print("\33[1m\33[42m:  PORT   \33[44m   SCANNER   \33[0m")
 
 subprocess.call('clear',shell=True)
 rmip = raw_input("\t Enter the remote host IP to scan:")
