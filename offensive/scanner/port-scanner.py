@@ -16,15 +16,16 @@ print ("\n Scanner is working on ",rmip)
 print ("*"*40)
 
 t1= datetime.now()
+
 try:
 	for port in range(r1,r2):
-	sock= socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-	socket.setdefaulttimeout(1)
-	result = sock.connect_ex((rmip,port))
-	if result==0:
-		print ("Port Open:-->\t", port)
-		# print desc[port]
-	sock.close()
+		sock= socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+		socket.setdefaulttimeout(1)
+		result = sock.connect_ex((rmip,port))
+		if result==0:
+			print ("Port Open:-->\t", port)
+			# print desc[port]
+		sock.close()
 except KeyboardInterrupt:
 	print "You stop this "
 	sys.exit()
