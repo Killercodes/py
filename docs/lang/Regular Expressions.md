@@ -197,34 +197,35 @@ The following table lists the regular expression syntax that is available in Pyt
 
 Here is the list of regular expression syntax in Python.
 ## Regular Expression Examples
+
 ### Literal characters
 Example | Description
-----|----
-`python`|Match "python".
+--|--
+`python` | Match "python".
 
 ### Character classes
 Example | Description
 ----|----
-`[Pp]ython`|Match "Python" or "python"	
-`rub[ye]`|Match "ruby" or "rube"
-`[aeiou]`|Match any one lowercase vowel
-`[0-9]`|Match any digit; same as [0123456789]
-`[a-z]`|Match any lowercase ASCII letter
-`[A-Z]`|Match any uppercase ASCII letter
-`[a-zA-Z0-9]`|Match any of the above	
-`[^aeiou]`|Match anything other than a lowercase vowel
-`[^0-9]`|Match anything other than a digit
+`[Pp]ython`| Match "Python" or "python"	
+`rub[ye]`| Match "ruby" or "rube"
+`[aeiou]`| Match any one lowercase vowel
+`[0-9]`| Match any digit; same as [0123456789]
+`[a-z]`| Match any lowercase ASCII letter
+`[A-Z]`| Match any uppercase ASCII letter
+`[a-zA-Z0-9]`| Match any of the above	
+`[^aeiou]`| Match anything other than a lowercase vowel
+`[^0-9]`| Match anything other than a digit
 
 ### Special Character Classes
 Example | Description
 ----|----
-`.`|Match any character except newline
-`\d`|Match a digit: [0-9]
-`\D`|Match a nondigit: [^0-9]
-`\s`|Match a whitespace character: [ \t\r\n\f]
-`\S`|Match nonwhitespace: [^ \t\r\n\f]
-`\w`|Match a single word character: [A-Za-z0-9_]
-`\W`|Match a nonword character: [^A-Za-z0-9_]
+`.`| Match any character except newline
+`\d`| Match a digit: [0-9]
+`\D`| Match a nondigit: [^0-9]
+`\s`| Match a whitespace character: [ \t\r\n\f]
+`\S`| Match nonwhitespace: [^ \t\r\n\f]
+`\w`| Match a single word character: [A-Za-z0-9_]
+`\W`| Match a nonword character: [^A-Za-z0-9_]
 
 ### Repetition Cases
 Example | Description
