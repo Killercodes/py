@@ -200,8 +200,10 @@ Here is the list of regular expression syntax in Python.
 
 ### Literal characters
 Example | Description
---|--
+-- | --
 `python` | Match "python".
+
+
 
 ### Character classes
 Example | Description
