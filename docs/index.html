@@ -66,11 +66,12 @@ li.dropdown {
         {
           var actualpath= "https://killercodes.github.io/py/" + file.path;
           var fileName = (file.path).replace(".md","");
+          fileName = (fileName).replace("docs/","");
           htmlString += `<a href="${fileName}" target="IFcontent">${file.name}</a>`;
         }
 
         htmlString += '';
-        var result= '<ul><li><a href="/">Python</a></li><li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Language</a><div class="dropdown-content">';
+        var result= '<ul><li><a href="/py">Python</a></li><li class="dropdown"><a class="dropbtn">Language</a><div class="dropdown-content">';
         result += htmlString;
         //result += '</div></li>'
         //result += '<li class="dropdown"><a class="dropbtn">Tools</a><div class="dropdown-content">';
