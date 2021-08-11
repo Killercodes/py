@@ -191,23 +191,23 @@ Modifier | Description
 `re.X`|Permits "cuter" regular expression syntax. It ignores whitespace (except inside a set `[]` or when escaped by a backslash) and treats unescaped # as a comment marker.
 
 ## Regular Expression Patterns
-Except for the control characters, `(+ ? . * ^ $ ( ) [ ] { } | \)`, all characters match themselves. You can escape a control character by preceding it with a backslash.
+Except for the control characters, ```(+ ? . * ^ $ ( ) [ ] { } | \)```, all characters match themselves. You can escape a control character by preceding it with a backslash.
 
-The following table lists the regular expression syntax that is available in Python −
+The following table lists the regular expression syntax that is available in Python
 
 Here is the list of regular expression syntax in Python.
 ## Regular Expression Examples
 
 ### Literal characters
 Example | Description
--- | --
+--- | ---
 `python` | Match "python".
 
 
 
 ### Character classes
 Example | Description
-----|----
+--- | ---
 `[Pp]ython`| Match "Python" or "python"	
 `rub[ye]`| Match "ruby" or "rube"
 `[aeiou]`| Match any one lowercase vowel
