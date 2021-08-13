@@ -34,7 +34,7 @@ def query():
 def theform():
 
     if request.method == 'GET':
-        return render_template('form.html')
+        return render_template('form2.html')
     else:
         name = request.form['name']
         location = request.form['location']
