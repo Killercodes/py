@@ -1,4 +1,4 @@
-# Packages in Python
+# Python Packages
 A package is a hierarchical file directory structure that defines a single Python application environment that consists of modules and subpackages and sub-subpackages, and so on.
 
 Consider a file Pots.py available in Phone directory. This file has the following line of source code −
