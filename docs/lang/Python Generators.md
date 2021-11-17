@@ -1,4 +1,4 @@
-# Generators in Python
+# Python Generators
 
 There are two terms involved when we discuss generators.
 
