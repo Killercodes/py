@@ -1,0 +1,22 @@
+<!DOCTYPE HTML []>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="application/javascript" src="app.js"></script>
+
+  </head>
+  <body>
+  <h1>DocSearch: Find docs</h1>
+    <div class="spacer">
+        <input type="text" id="myInput" onkeyup="mySearch()" placeholder="Type doc name here...">
+        <table id="tsearch">
+        </table>
+    </div>
+        <script>
+        Populate("Killercodes/py","docs/lang");
+        Populate("Killercodes/crm","docs");
+        </script>
+  </body>
+</html>
