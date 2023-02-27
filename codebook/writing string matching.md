@@ -39,7 +39,7 @@ class StringMatching:
 file = open("abcd.txt","r")
 for l in file:
     if len(l) > 0:
-        sm = StringMatching("http://in01apv04:5555/AppWebServices/ImportJob.asmx")
+        sm = StringMatching("http://website:5555/AppWebServices/ImportJob.asmx")
         percent = sm.Compare(l)
         print("{} {}".format(percent,l))
 
