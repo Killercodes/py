@@ -1,11 +1,174 @@
-# Learn Python 3
+- [**Learn Python 3**](#learn-python-3)
+- [Running Python](#running-python)
+  - [Interactive Interpreter](#interactive-interpreter)
+- [Why Python](#why-python)
+- [What is new in Python 3](#what-is-new-in-python-3)
+  - [The print Function](#the-print-function)
+  - [Reading Input from Keyboard](#reading-input-from-keyboard)
+  - [Integer Division](#integer-division)
+  - [Unicode Representation](#unicode-representation)
+  - [xrange() Function Removed](#xrange-function-removed)
+  - [raise exception](#raise-exception)
+  - [Arguments in Exceptions](#arguments-in-exceptions)
+  - [next() Function and .next() Method](#next-function-and-next-method)
+- [The Python Language](#the-python-language)
+  - [Reserved Words](#reserved-words)
+  - [Lines and Indentation](#lines-and-indentation)
+  - [Quotation in Python](#quotation-in-python)
+  - [Comments in Python](#comments-in-python)
+- [Variables \& Data types](#variables--data-types)
+  - [Multiple Assignment](#multiple-assignment)
+  - [Standard Data Types](#standard-data-types)
+  - [Python Numbers](#python-numbers)
+    - [Python supports three different numerical types −](#python-supports-three-different-numerical-types-)
+  - [Python Strings](#python-strings)
+  - [Python Lists](#python-lists)
+  - [Python Tuples](#python-tuples)
+  - [Python Dictionary](#python-dictionary)
+  - [Data Type Conversion](#data-type-conversion)
+- [Basic Operators](#basic-operators)
+  - [Python Arithmetic Operators](#python-arithmetic-operators)
+  - [Python Comparison Operators](#python-comparison-operators)
+  - [Python Assignment Operators](#python-assignment-operators)
+  - [Python Bitwise Operators](#python-bitwise-operators)
+  - [Python Logical Operators](#python-logical-operators)
+  - [Python Membership Operators](#python-membership-operators)
+  - [Python Identity Operators](#python-identity-operators)
+  - [Python Operators Precedence](#python-operators-precedence)
+- [Decision Making](#decision-making)
+  - [`if` Statements](#if-statements)
+    - [`if` statement Example](#if-statement-example)
+  - [`if...else` Statements](#ifelse-statements)
+    - [Python `if...else` statement Example](#python-ifelse-statement-example)
+    - [The `elif` Statement](#the-elif-statement)
+    - [Python `if...elif...else` statement Example](#python-ifelifelse-statement-example)
+  - [Nested `if` Statements](#nested-if-statements)
+  - [Single Statement Suites](#single-statement-suites)
+- [Loops](#loops)
+  - [`while` Loop Statements](#while-loop-statements)
+  - [The Infinite Loop](#the-infinite-loop)
+    - [Using `else` Statement with Loops](#using-else-statement-with-loops)
+    - [Single Statement Suites](#single-statement-suites-1)
+  - [`for` loop Statements](#for-loop-statements)
+    - [The range() function](#the-range-function)
+    - [Iterating by Sequence Index](#iterating-by-sequence-index)
+    - [Using `else` Statement with Loops](#using-else-statement-with-loops-1)
+  - [Nested Loops](#nested-loops)
+  - [Loop Control Statements](#loop-control-statements)
+    - [`break` Keyword](#break-keyword)
+    - [`continue` keyword](#continue-keyword)
+    - [`pass` keyword](#pass-keyword)
+  - [Iterator and Generator](#iterator-and-generator)
+- [`datetime` Module](#datetime-module)
+  - [Creating Date Objects](#creating-date-objects)
+  - [The `strftime()` Method](#the-strftime-method)
+- [Functions](#functions)
+  - [Defining a Function](#defining-a-function)
+  - [Calling a Function](#calling-a-function)
+  - [Pass by Reference vs Value](#pass-by-reference-vs-value)
+  - [Function Arguments](#function-arguments)
+    - [Required Arguments](#required-arguments)
+    - [Keyword Arguments](#keyword-arguments)
+    - [My string](#my-string)
+    - [Default Arguments](#default-arguments)
+    - [Variable-length Arguments](#variable-length-arguments)
+  - [The Anonymous Functions](#the-anonymous-functions)
+  - [The return Statement](#the-return-statement)
+    - [Scope of Variables](#scope-of-variables)
+      - [Global vs. Local variables](#global-vs-local-variables)
+- [Modules](#modules)
+  - [The import Statement](#the-import-statement)
+  - [The `from...import` Statement](#the-fromimport-statement)
+  - [Executing Modules as Scripts](#executing-modules-as-scripts)
+  - [Locating Modules](#locating-modules)
+  - [The PYTHONPATH Variable](#the-pythonpath-variable)
+  - [Namespaces and Scoping](#namespaces-and-scoping)
+  - [The dir( ) Function](#the-dir--function)
+  - [The globals() and locals() Functions](#the-globals-and-locals-functions)
+  - [The reload() Function](#the-reload-function)
+    - [reload(module\_name)](#reloadmodule_name)
+  - [Packages in Python](#packages-in-python)
+- [Files I/O](#files-io)
+  - [Open file](#open-file)
+  - [Read a file](#read-a-file)
+    - [Read Only Parts of the File](#read-only-parts-of-the-file)
+    - [Read Lines](#read-lines)
+  - [Close Files](#close-files)
+  - [Write File](#write-file)
+    - [Write to an Existing File](#write-to-an-existing-file)
+    - [Create a New File](#create-a-new-file)
+    - [Delete a File](#delete-a-file)
+    - [Check if File exist:](#check-if-file-exist)
+    - [Delete Folder](#delete-folder)
+- [Exception Handling](#exception-handling)
+  - [`try` block](#try-block)
+  - [Many Exceptions](#many-exceptions)
+  - [`else` block](#else-block)
+  - [`finally` block](#finally-block)
+  - [Raise an exception](#raise-an-exception)
+- [Object Oriented Python](#object-oriented-python)
+  - [Overview of OOP Terminology](#overview-of-oop-terminology)
+  - [Creating Classes](#creating-classes)
+  - [Creating Instance Objects](#creating-instance-objects)
+  - [Accessing Attributes](#accessing-attributes)
+  - [Built-In Class Attributes](#built-in-class-attributes)
+  - [Destroying Objects (Garbage Collection)](#destroying-objects-garbage-collection)
+  - [Class Inheritance](#class-inheritance)
+  - [Overriding Methods](#overriding-methods)
+  - [Calling child method](#calling-child-method)
+    - [Base Overloading Methods](#base-overloading-methods)
+  - [Overloading Operators](#overloading-operators)
+  - [Data Hiding](#data-hiding)
+- [Regular Expressions in Python](#regular-expressions-in-python)
+  - [Compilation flags](#compilation-flags)
+  - [The match Function](#the-match-function)
+  - [Matching Versus Searching](#matching-versus-searching)
+  - [Search and Replace](#search-and-replace)
+  - [Regular Expression Modifiers: Option Flags](#regular-expression-modifiers-option-flags)
+  - [Regular Expression Patterns](#regular-expression-patterns)
+  - [Regular Expression Examples](#regular-expression-examples)
+    - [Literal characters](#literal-characters)
+    - [Character classes](#character-classes)
+    - [Special Character Classes](#special-character-classes)
+    - [Repetition Cases](#repetition-cases)
+    - [Nongreedy repetition](#nongreedy-repetition)
+    - [Grouping with Parentheses](#grouping-with-parentheses)
+    - [Backreferences](#backreferences)
+    - [Alternatives](#alternatives)
+    - [Anchors](#anchors)
+    - [Special Syntax with Parentheses](#special-syntax-with-parentheses)
+- [Context Manager](#context-manager)
+  - [The with statement](#the-with-statement)
+  - [Writing your own context manager](#writing-your-own-context-manager)
+  - [Class based context manager](#class-based-context-manager)
+- [Python Decorators](#python-decorators)
+  - [Bare bone decorator](#bare-bone-decorator)
+  - [Decorator for a function with parameters](#decorator-for-a-function-with-parameters)
+  - [Template for a basic decorator](#template-for-a-basic-decorator)
+  - [Decorator with parameters](#decorator-with-parameters)
+  - [Class based decorators](#class-based-decorators)
+- [Dataclasses](#dataclasses)
+  - [Features](#features)
+  - [Default values](#default-values)
+  - [Type hints](#type-hints)
+- [Main top-level script environment](#main-top-level-script-environment)
+  - [What is it](#what-is-it)
+  - [Advantages](#advantages)
 
-Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL). Python is named after a TV Show called ‘Monty Python’s Flying Circus’ and not after Python-the snake.
 
-## Running Python
+
+
+
+---
+**Learn Python 3**
+===
+
+Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the `GNU General Public License (GPL)`. Python is named after a TV Show called ‘Monty Python’s Flying Circus’ and not after Python-the snake.
+
+# Running Python
 There are three different ways to start Python −
 
-Interactive Interpreter
+## Interactive Interpreter
 You can start Python from Unix, DOS, or any other system that provides you a command-line interpreter or shell window.
 
 
@@ -36,22 +199,22 @@ Option | Description
 
 # What is new in Python 3
 ## The print Function
-Most notable and most widely known change in Python 3 is how the print function is used. Use of parenthesis () with print function is now mandatory. It was optional in Python 2.
+- Most notable and most widely known change in **Python 3** is how the print function is used. Use of parenthesis `()` with print function is now mandatory. It was optional in **Python 2**.
 ``` python
 print "Hello World" #is acceptable in Python 2
 print ("Hello World") # in Python 3, print must be followed by ()
 ```
-The print() function inserts a new line at the end, by default. In Python 2, it can be suppressed by putting ',' at the end. In Python 3, "end =' '" appends space instead of newline.
+- The print() function inserts a new line at the end, by default. In **Python 2**, it can be suppressed by putting `,` at the end. In **Python 3**, `end =' '` appends space instead of newline.
 ``` python
 print x,           # Trailing comma suppresses newline in Python 2
 print(x, end=" ")  # Appends a space instead of a newline in Python 3
 ```
 ## Reading Input from Keyboard
-Python 2 has two versions of input functions, input() and raw_input(). The input() function treats the received data as string if it is included in quotes '' or "", otherwise the data is treated as number.
+**Python 2** has two versions of input functions, `input()` and `raw_input()`. The i`nput()` function treats the received data as string if it is included in quotes `''` or `""`, otherwise the data is treated as number.
 
-In Python 3, raw_input() function is deprecated. Further, the received data is always treated as string.
+In **Python 3**, `raw_input()` function is deprecated. Further, the received data is always treated as string.
 ``` python
-In Python 2
+# In Python 2
 
 >>> x = input('something:') 
 something:10 #entered data is treated as number
@@ -73,7 +236,7 @@ something:'10' #entered data treated as string including ''
 >>> x
 "'10'"
 
-In Python 3
+# In Python 3
 
 >>> x = input("something:")
 something:10
@@ -93,9 +256,9 @@ Traceback (most recent call last):
 NameError: name 'raw_input' is not defined
 ```
 ## Integer Division
-In Python 2, the result of division of two integers is rounded to the nearest integer. As a result, `3/2` will show `1`. In order to obtain a floating-point division, numerator or denominator must be explicitly used as float. Hence, either 3.0/2 or 3/2.0 or 3.0/2.0 will result in 1.5
+In **Python 2**, the result of division of two integers is rounded to the nearest integer. As a result, `3/2` will show `1`. In order to obtain a floating-point division, numerator or denominator must be explicitly used as float. Hence, either `3.0/2` or `3/2.0` or `3.0/2.0` will result in `1.5`
 
-Python 3 evaluates `3 / 2 as 1.5` by default, which is more intuitive for new programmers.
+**Python 3** evaluates `3 / 2 as 1.5` by default, which is more intuitive for new programmers.
 ``` python
 #in python 2
 >>> 3/2
@@ -105,17 +268,17 @@ Python 3 evaluates `3 / 2 as 1.5` by default, which is more intuitive for new pr
 1.5
 ```
 ## Unicode Representation
-Python 2 requires you to mark a string with a u if you want to store it as Unicode.
+**Python 2** requires you to mark a string with a u if you want to store it as Unicode.
 
-Python 3 stores strings as Unicode, by default. We have Unicode (utf-8) strings, and 2 byte classes: byte and byte arrays.
+**Python 3** stores strings as Unicode, by default. We have Unicode (utf-8) strings, and 2 byte classes: byte and byte arrays.
 
 ## xrange() Function Removed
-In Python 2 range() returns a list, and xrange() returns an object that will only generate the items in the range when needed, saving memory.
+In **Python 2** range() returns a list, and xrange() returns an object that will only generate the items in the range when needed, saving memory.
 
-In Python 3, the range() function is removed, and xrange() has been renamed as range(). In addition, the range() object supports slicing in Python 3.2 and later.
+In **Python 3**, the range() function is removed, and xrange() has been renamed as range(). In addition, the range() object supports slicing in **Python 3.2** and later.
 
 ## raise exception
-Python 2 accepts both notations, the 'old' and the 'new' syntax; Python 3 raises a SyntaxError if we do not enclose the exception argument in parenthesis.
+**Python 2** accepts both notations, the 'old' and the 'new' syntax; **Python 3** raises a SyntaxError if we do not enclose the exception argument in parenthesis.
 ``` python
 raise IOError, "file error" #This is accepted in Python 2
 raise IOError("file error") #This is also accepted in Python 2
@@ -123,13 +286,13 @@ raise IOError, "file error" #syntax error is raised in Python 3
 raise IOError("file error") #this is the recommended syntax in Python 3
 ```
 ## Arguments in Exceptions
-In Python 3, arguments to exception should be declared with 'as' keyword.
+In **Python 3**, arguments to exception should be declared with 'as' keyword.
 ``` python
 except Myerror, err: # In Python2
 except Myerror as err: #In Python 3
 ```
 ## next() Function and .next() Method
-In Python 2, next() as a method of generator object, is allowed. In Python 2, the next() function, to iterate over generator object, is also accepted. In Python 3, however, next(0 as a generator method is discontinued and raises AttributeError.
+In **Python 2**, next() as a method of generator object, is allowed. In **Python 2**, the next() function, to iterate over generator object, is also accepted. In Python 3, however, next(0 as a generator method is discontinued and raises AttributeError.
 
 ``` python
 gen = (letter for letter in 'Hello World') # creates generator object
@@ -140,7 +303,7 @@ my_generator.next() #allowed in Python 2. raises AttributeError in Python 3
 ## Reserved Words
 The following list shows the Python keywords. These are reserved words and you cannot use them as constants or variables or any other identifier names. All the Python keywords contain lowercase letters only.
 | | | | | | |
-----|----|---|----|----|----
+--|--|--|--|--|--
 and	|exec	|not|as	|finally|	or
 assert|	for|	pass|break|	from|	print
 class|	global|	raise|continue|	if|	return
@@ -149,7 +312,7 @@ elif|	is|	with|else|	lambda|	yield
 except|		|
 
 ## Lines and Indentation
-Python does not use braces({}) to indicate blocks of code for class and function definitions or flow control. Blocks of code are denoted by line indentation, which is rigidly enforced.
+Python does not use braces(`{}`) to indicate blocks of code for class and function definitions or flow control. Blocks of code are denoted by line indentation, which is rigidly enforced.
 
 The number of spaces in the indentation is variable, but all statements within the block must be indented the same amount. For example −
 ``` python
@@ -160,9 +323,10 @@ else:
    print ("False")
 ```
 ## Quotation in Python
-Python accepts single ('), double (") and triple (''' or """) quotes to denote string literals, as long as the same type of quote starts and ends the string.
+Python accepts single `'`, double `"` and triple `'''` or `"""` quotes to denote string literals, as long as the same type of quote starts and ends the string.
 
 The triple quotes are used to span the string across multiple lines. For example, all the following are legal −
+
 ``` python
 word = 'word'
 sentence = "This is a sentence."
@@ -170,7 +334,8 @@ paragraph = """This is a paragraph. It is
 made up of multiple lines and sentences."""
 ```
 ## Comments in Python
-A hash sign (#) that is not inside a string literal is the beginning of a comment. All characters after the #, up to the end of the physical line, are part of the comment and the Python interpreter ignores them.
+A hash sign `#` that is not inside a string literal is the beginning of a comment. All characters after the `#`, up to the end of the physical line, are part of the comment and the Python interpreter ignores them.
+
 ``` python
 #!/usr/bin/python3
 
@@ -224,11 +389,11 @@ John
 Python allows you to assign a single value to several variables simultaneously.
 
 For example −
-```
+``` python
  a = b = c = 1
 ```
 Here, an integer object is created with the value 1, and all the three variables are assigned to the same memory location. You can also assign multiple objects to multiple variables. For example −
-```
+``` python
  a, b, c = 1, 2, "john"
 ```
 Here, two integer objects with values 1 and 2 are assigned to the variables a and b respectively, and one string object with the value "john" is assigned to the variable c.
@@ -246,33 +411,34 @@ Python has five standard data types −
 
 ## Python Numbers
 Number data types store numeric values. Number objects are created when you assign a value to them. For example −
-```
+``` python
 var1 = 1
 var2 = 10
 ```
 You can also delete the reference to a number object by using the del statement. The syntax of the del statement is −
-```
+``` python
 del var1[,var2[,var3[....,varN]]]]
 ```
 You can delete a single object or multiple objects by using the del statement.
 
 For example −
-```
+``` python
 del var
 del var_a, var_b
 ```
 ### Python supports three different numerical types −
 
-- int (signed integers)
-- float (floating point real values)
-- complex (complex numbers)
+- `int` (signed integers)
+- `float` (floating point real values)
+- `complex` (complex numbers)
+- 
 All integers in Python3 are represented as long integers. Hence, there is no separate number type as long.
 
-Examples
+**Examples**
 Here are some examples of numbers −
 
-int|	float|	complex
-----|---|---
+int| float|	complex
+--|--|--
 10|	0.0|	3.14j
 100|	15.20|	45.j
 -786|	-21.9|	9.322e-36j
@@ -286,9 +452,11 @@ int|	float|	complex
 A complex number consists of an ordered pair of real floating-point numbers denoted by `x + yj`, where `x` and `y` are real numbers and `j` is the imaginary unit.
 
 ## Python Strings
-Strings in Python are identified as a contiguous set of characters represented in the quotation marks. Python allows either pair of single or double quotes. Subsets of strings can be taken using the slice operator ([ ] and [:] ) with indexes starting at 0 in the beginning of the string and working their way from -1 to the end.
+Strings in Python are identified as a contiguous set of characters represented in the quotation marks. Python allows either pair of single or double quotes. Subsets of strings can be taken using the slice operator `[ ]` and `[:]`  with indexes starting at `0` in the beginning of the string and working their way from `-1` to the end.
 
-The plus (+) sign is the string concatenation operator and the asterisk (*) is the repetition operator. For example −
+The plus `+` sign is the string concatenation operator and the asterisk `*` is the repetition operator. 
+
+For example −
 ``` python
 #!/usr/bin/python3
 
@@ -313,7 +481,9 @@ Hello World!TEST
 ## Python Lists
 Lists are the most versatile of Python's compound data types. A list contains items separated by commas and enclosed within square brackets `[]`. To some extent, lists are similar to arrays in `C`. One of the differences between them is that all the items belonging to a list can be of different data type.
 
-The values stored in a list can be accessed using the slice operator `[]` and `[:]` with indexes starting at 0 in the beginning of the list and working their way to end -1. The plus (+) sign is the list concatenation operator, and the asterisk `*` is the repetition operator. For example −
+The values stored in a list can be accessed using the slice operator `[]` and `[:]` with indexes starting at 0 in the beginning of the list and working their way to end `-1`. The plus `+` sign is the list concatenation operator, and the asterisk `*` is the repetition operator. 
+
+For example −
 ``` python
 #!/usr/bin/python3
 
@@ -374,7 +544,9 @@ tuple[2] = 1000    # Invalid syntax with tuple
 list[2] = 1000     # Valid syntax with list
 ```
 ## Python Dictionary
-Python's dictionaries are kind of hash-table type. They work like associative arrays or hashes found in Perl and consist of key-value pairs. A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object.
+> Python's dictionaries are kind of hash-table type. They work like associative arrays or hashes found in Perl and consist of key-value pairs. 
+
+A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object.
 
 Dictionaries are enclosed by curly braces `{ }` and values can be assigned and accessed using square braces `[]`. For example −
 ``` python
@@ -409,22 +581,22 @@ There are several built-in functions to perform conversion from one data type to
 
 Function | Description
 ----|----
-int(x [,base])|Converts x to an integer. The base specifies the base if x is a string.
-float(x)|Converts x to a floating-point number.
-complex(real [,imag])|Creates a complex number.
-str(x)|Converts object x to a string representation.
-repr(x)|Converts object x to an expression string.
-eval(str)|Evaluates a string and returns an object.
-tuple(s)|Converts s to a tuple.
-list(s)|Converts s to a list.
-set(s)|Converts s to a set.
-dict(d)|Creates a dictionary. d must be a sequence of (key,value) tuples.
-frozenset(s)|Converts s to a frozen set.
-chr(x)|Converts an integer to a character.
-unichr(x)|Converts an integer to a Unicode character.
-ord(x)|Converts a single character to its integer value.
-hex(x)|Converts an integer to a hexadecimal string.
-oct(x)|Converts an integer to an octal string.
+`int(x [,base])`|Converts x to an integer. The base specifies the base if x is a string.
+`float(x)`|Converts x to a floating-point number.
+`complex(real [,imag])`|Creates a complex number.
+`str(x)`|Converts object x to a string representation.
+`repr(x)`|Converts object x to an expression string.
+`eval(str)`|Evaluates a string and returns an object.
+`tuple(s)`|Converts s to a tuple.
+`list(s)`|Converts s to a list.
+`set(s)`|Converts s to a set.
+`dict(d)`|Creates a dictionary. d must be a sequence of (key,value) tuples.
+`frozenset(s)`|Converts s to a frozen set.
+`chr(x)`|Converts an integer to a character.
+`unichr(x)`|Converts an integer to a Unicode character.
+`ord(x)`|Converts a single character to its integer value.
+`hex(x)`|Converts an integer to a hexadecimal string.
+`oct(x)`|Converts an integer to an octal string.
 
 # Basic Operators
 Operators are the constructs, which can manipulate the value of operands. Consider the expression `4 + 5 = 9`. Here, `4` and `5` are called the operands and `+` is called the operator.
@@ -477,20 +649,30 @@ c = a//b
 print ("Line 7 - Value of c is ", c)
 ```
 
-Operator|	Description|	Example
-----|----|----
-+ Addition|	Adds values on either side of the operator.|	a + b = 31
-- Subtraction|	Subtracts right hand operand from left hand operand.|	a – b = -11
-* Multiplication|	Multiplies values on either side of the operator|	a * b = 210
-/ Division|	Divides left hand operand by right hand operand|	b / a = 2.1
-% Modulus|	Divides left hand operand by right hand operand and returns remainder|	b % a = 1
-** Exponent|	Performs exponential (power) calculation on operators|	a**b =10 to the power 20
-//	Floor Division| The division of operands where the result is the quotient in which the digits after the decimal point are removed. But if one of the operands is negative, the result is floored, i.e., rounded away from zero (towards negative infinity):|	9//2 = 4 and 9.0//2.0 = 4.0, -11//3 = -4, -11.0//3 = -4.0
+Operator | Description | Example
+--|--|--
+`+ Addition`|	Adds values on either side of the operator.|	a + b = 31
+`- Subtraction`|	Subtracts right hand operand from left hand operand.|	a – b = -11
+`* Multiplication`|	Multiplies values on either side of the operator|	a * b = 210
+`/ Division`|	Divides left hand operand by right hand operand|	b / a = 2.1
+`% Modulus`|	Divides left hand operand by right hand operand and returns remainder|	b % a = 1
+`** Exponent`|	Performs exponential (power) calculation on operators|	a**b =10 to the power 20
+`//	Floor Division`| The division of operands where the result is the quotient in which the digits after the decimal point are removed. But if one of the operands is negative, the result is floored, i.e., rounded away from zero (towards negative infinity):|	9//2 = 4 and 9.0//2.0 = 4.0, -11//3 = -4, -11.0//3 = -4.0
 
 ## Python Comparison Operators
 These operators compare the values on either side of them and decide the relation among them. They are also called Relational operators.
 
-Assume variable a holds the value 10 and variable b holds the value 20, then −
+Operator|	Description|	Example
+----|----|----
+`==	`|If the values of two operands are equal, then the condition becomes true.	|(a == b) is not true.
+`!=`|	If values of two operands are not equal, then condition becomes true.|	(a!= b) is true.
+`>`|	If the value of left operand is greater than the value of right operand, then condition becomes true.|	(a > b) is not true.
+`<`|	If the value of left operand is less than the value of right operand, then condition becomes true.|	(a < b) is true.
+`>=`|	If the value of left operand is greater than or equal to the value of right operand, then condition becomes true.|	(a >= b) is not true.
+`<=`|	If the value of left operand is less than or equal to the value of right operand, then condition becomes true.|	(a <= b) is true.
+
+
+Assume variable a holds the value 10 and variable b holds the value 21, then −
 
 ``` python
 #!/usr/bin/python3
@@ -531,14 +713,7 @@ else:
    print ("Line 6 - b is neither greater than  nor equal to b")
 ```
 
-Operator|	Description|	Example
-----|----|----
-==	|If the values of two operands are equal, then the condition becomes true.	|(a == b) is not true.
-!=|	If values of two operands are not equal, then condition becomes true.|	(a!= b) is true.
->|	If the value of left operand is greater than the value of right operand, then condition becomes true.|	(a > b) is not true.
-<|	If the value of left operand is less than the value of right operand, then condition becomes true.|	(a < b) is true.
->=|	If the value of left operand is greater than or equal to the value of right operand, then condition becomes true.|	(a >= b) is not true.
-<=|	If the value of left operand is less than or equal to the value of right operand, then condition becomes true.|	(a <= b) is true.
+
 
 the output will be
 ```
@@ -550,6 +725,18 @@ Line 5 - a is either less than or equal to  b
 Line 6 - b is either greater than  or equal to b
 ```
 ## Python Assignment Operators
+
+Operator|	Description|	Example
+----|----|----
+`=`|	Assigns values from right side operands to left side operand|	c = a + b assigns value of a + b into c
+`+= Add AND`|	It adds right operand to the left operand and assign the result to left operand|	c += a is equivalent to c = c + a
+`-= Subtract AND`|	It subtracts right operand from the left operand and assign the result to left operand|	c -= a is equivalent to c = c - a
+`*= Multiply AND`|	It multiplies right operand with the left operand and assign the result to left operand|	c *= a is equivalent to c = c * a
+`/= Divide AND`|	It divides left operand with the right operand and assign the result to left operand|	c /= a is equivalent to c = c / ac /= a is equivalent to c = c / a
+`%= Modulus AND`|	It takes modulus using two operands and assign the result to left |operand	c %= a is equivalent to c = c % a
+`**= Exponent AND`|	Performs exponential (power) calculation on operators and assign value to the left operand|	c **= a is equivalent to c = c ** a
+`//= Floor Division`|	It performs floor division on operators and assign value to the left operand|	c //= a is equivalent to c = c // a
+
 Assume variable a holds the value 10 and variable b holds the value 20, then −
 
 ``` python
@@ -582,16 +769,7 @@ c //= a
 print ("Line 7 - Value of c is ", c)
 ```
 
-Operator|	Description|	Example
-----|----|----
-=|	Assigns values from right side operands to left side operand|	c = a + b assigns value of a + b into c
-+= Add AND|	It adds right operand to the left operand and assign the result to left operand|	c += a is equivalent to c = c + a
--= Subtract AND|	It subtracts right operand from the left operand and assign the result to left operand|	c -= a is equivalent to c = c - a
-*= Multiply AND|	It multiplies right operand with the left operand and assign the result to left operand|	c *= a is equivalent to c = c * a
-/= Divide AND|	It divides left operand with the right operand and assign the result to left operand|	c /= a is equivalent to c = c / ac /= a is equivalent to c = c / a
-%= Modulus AND|	It takes modulus using two operands and assign the result to left |operand	c %= a is equivalent to c = c % a
-**= Exponent AND|	Performs exponential (power) calculation on operators and assign value to the left operand|	c **= a is equivalent to c = c ** a
-//= Floor Division|	It performs floor division on operators and assign value to the left operand|	c //= a is equivalent to c = c // a
+
 
 The output
 ```
@@ -605,12 +783,9 @@ Line 7 - Value of c is  99864
 ```
 ## Python Bitwise Operators
 Bitwise operator works on bits and performs bit-by-bit operation. Assume if a = 60; and b = 13; Now in binary format they will be as follows −
-
+```
 a = 0011 1100
-
 b = 0000 1101
-
------------------
 
 a&b = 0000 1100
 
@@ -619,11 +794,23 @@ a|b = 0011 1101
 a^b = 0011 0001
 
 ~a = 1100 0011
+```
 
-Python's built-in function bin() can be used to obtain binary representation of an integer number.
+Python's built-in function `bin()` can be used to obtain binary representation of an integer number.
 
 The following Bitwise operators are supported by Python language −
 
+Operator|	Description|	Example
+----|----|----
+`& Binary AND`|	Operator copies a bit, to the result, if it exists in both operands|	(a & b) (means 0000 1100)
+`| Binary OR`|	It copies a bit, if it exists in either operand.|	(a | b) = 61 (means 0011 1101)
+`^ Binary XOR`|	It copies the bit, if it is set in one operand but not both.|	(a ^ b) = 49 (means 0011 0001)
+`~ Binary Ones Complement`|	It is unary and has the effect of 'flipping' bits.|	(~a ) = -61 (means 1100 0011 in 2's complement form due to a signed binary number.
+`<< Binary Left Shift`|	The left operand's value is moved left by the number of bits specified by the right operand.|	a << = 240 (means 1111 0000)
+`>> Binary Right Shift`|	The left operand's value is moved right by the number of bits specified by the right operand.|	a >> = 15 (means 0000 1111)
+
+
+**Example**
 ``` python
 #!/usr/bin/python3
 
@@ -651,15 +838,6 @@ c = a >> 2;       # 15 = 0000 1111
 print ("result of RIGHT SHIFT is ", c,':',bin(c))
 ```
 
-Operator|	Description|	Example
-----|----|----
-& Binary AND|	Operator copies a bit, to the result, if it exists in both operands|	(a & b) (means 0000 1100)
-| Binary OR|	It copies a bit, if it exists in either operand.|	(a | b) = 61 (means 0011 1101)
-^ Binary XOR|	It copies the bit, if it is set in one operand but not both.|	(a ^ b) = 49 (means 0011 0001)
-~ Binary Ones Complement|	It is unary and has the effect of 'flipping' bits.|	(~a ) = -61 (means 1100 0011 in 2's complement form due to a signed binary number.
-<< Binary Left Shift|	The left operand's value is moved left by the number of bits specified by the right operand.|	a << = 240 (means 1111 0000)
->> Binary Right Shift|	The left operand's value is moved right by the number of bits specified by the right operand.|	a >> = 15 (means 0000 1111)
-
 ```
 a = 60 : 0b111100 b = 13 : 0b1101
 result of AND is  12 : 0b1100
@@ -674,13 +852,19 @@ The following logical operators are supported by Python language. Assume variabl
 
 Operator|	Description|	Example
 ----|----|----
-and Logical AND|	If both the operands are true then condition becomes true.	|(a and b) is False.
-or Logical OR|	If any of the two operands are non-zero then condition becomes true.|	(a or b) is True.
-not Logical NOT|	Used to reverse the logical state of its operand.|	Not(a and b) is True.
+`and Logical AND`|	If both the operands are true then condition becomes true.	|(a and b) is False.
+`or Logical OR`|	If any of the two operands are non-zero then condition becomes true.|	(a or b) is True.
+`not Logical NOT`|	Used to reverse the logical state of its operand.|	Not(a and b) is True.
 
 
 ## Python Membership Operators
 Python’s membership operators test for membership in a sequence, such as strings, lists, or tuples. There are two membership operators as explained below −
+
+
+Operator|	Description|	Example
+----|----|----
+`in`|	Evaluates to true if it finds a variable in the specified sequence and false otherwise.|	x in y, here in results in a 1 if x is a member of sequence y.
+`not in`|	Evaluates to true if it does not finds a variable in the specified sequence and false otherwise.|	x not in y, here not in results in a 1 if x is not a member of sequence y.
 
 ```python
 #!/usr/bin/python3
@@ -706,10 +890,6 @@ else:
    print ("Line 3 - a is not available in the given list")
 ```
 
-Operator|	Description|	Example
-----|----|----
-in|	Evaluates to true if it finds a variable in the specified sequence and false otherwise.|	x in y, here in results in a 1 if x is a member of sequence y.
-not in|	Evaluates to true if it does not finds a variable in the specified sequence and false otherwise.|	x not in y, here not in results in a 1 if x is not a member of sequence y.
 
 The Output
 ```
@@ -720,6 +900,11 @@ Line 3 - a is available in the given list
 
 ## Python Identity Operators
 Identity operators compare the memory locations of two objects. There are two Identity operators as explained below −
+
+Operator|	Description|	Example
+----|----|----
+`is`|	Evaluates to true if the variables on either side of the operator point to the same object and false otherwise.|	x is y, here is results in 1 if id(x) equals id(y).
+`is not`|	Evaluates to false if the variables on either side of the operator point to the same object and true otherwise.|	x is not y, here is not results in 1 if id(x) is not equal to id(y).
 
 ```python
 #!/usr/bin/python3
@@ -747,10 +932,7 @@ else:
    print ("Line 5 - a and b have same identity")
 ```
 
-Operator|	Description|	Example
-----|----|----
-is|	Evaluates to true if the variables on either side of the operator point to the same object and false otherwise.|	x is y, here is results in 1 if id(x) equals id(y).
-is not|	Evaluates to false if the variables on either side of the operator point to the same object and true otherwise.|	x is not y, here is not results in 1 if id(x) is not equal to id(y).
+
 
 ```
 Line 1 a= 20 : 1594701888 b= 20 : 1594701888
@@ -763,26 +945,24 @@ Line 5 - a and b do not have same identity
 ## Python Operators Precedence
 The following table lists all operators from highest precedence to the lowest.
 
-Show Example
-
 Operator | Description
-----|----
-**|Exponentiation (raise to the power)
-~ + -|Ccomplement, unary plus and minus (method names for the last two are +@ and -@)
-* / % //|Multiply, divide, modulo and floor division
-+ -|Addition and subtraction
->> <<|Right and left bitwise shift
-&|Bitwise 'AND'	
-^\| |Bitwise exclusive `OR' and regular `OR'
-<= < > >=|Comparison operators
+--|--
+`**`|Exponentiation (raise to the power)
+`~ + -`|Ccomplement, unary plus and minus (method names for the last two are +@ and -@)
+`* / % //`|Multiply, divide, modulo and floor division
+`+ -`|Addition and subtraction
+`>> <<`|Right and left bitwise shift
+`&`|Bitwise 'AND'	
+`^\| `|Bitwise exclusive `OR' and regular `OR'
+`<= < > >=`|Comparison operators
 <> == !=|Equality operators
-= %= /= //= -= += *= **=|Assignment operators
-is is not|Identity operators
-in not in|Membership operators
-not or and|Logical operators
+`= %= /= //= -= += *= **=`|Assignment operators
+`is is not`|Identity operators
+`in not in`|Membership operators
+`not or and`|Logical operators
 
 # Decision Making
-Decision-making is the anticipation of conditions occurring during the execution of a program and specified actions taken according to the conditions.
+> Decision-making is the anticipation of conditions occurring during the execution of a program and specified actions taken according to the conditions.
 
 Decision structures evaluate multiple expressions, which produce TRUE or FALSE as the outcome. You need to determine which action to take and which statements to execute if the outcome is TRUE or FALSE otherwise.
 
@@ -794,13 +974,13 @@ Python programming language provides the following types of decision-making stat
 
 Statement | Description
 ----|----
-if statements|An if statement consists of a boolean expression followed by one or more statements.
-if...else statements|An if statement can be followed by an optional else statement, which executes when the boolean expression is FALSE.
-nested if statements|You can use one if or else if statement inside another if or else if statement(s).
+`if statements`|An if statement consists of a boolean expression followed by one or more statements.
+`if...else statements`|An if statement can be followed by an optional else statement, which executes when the boolean expression is FALSE.
+`nested if statements`|You can use one if or else if statement inside another if or else if statement(s).
 
 Let us go through each decision-making statement quickly.
 
-## IF Statements
+## `if` Statements
 The IF statement is similar to that of other languages. The if statement contains a logical expression using which the data is compared and a decision is made based on the result of the comparison.
 
 Syntax
@@ -808,9 +988,9 @@ Syntax
 if expression:
    statement(s)
 ```
-If the boolean expression evaluates to TRUE, then the block of statement(s) inside the if statement is executed. In Python, statements in a block are uniformly indented after the : symbol. If boolean expression evaluates to FALSE, then the first set of code after the end of block is executed.
+If the boolean expression evaluates to `TRUE`, then the block of statement(s) inside the if statement is executed. In Python, statements in a block are uniformly indented after the : symbol. If boolean expression evaluates to `FALSE`, then the first set of code after the end of block is executed.
 
-**If statement Example**
+### `if` statement Example
 
 ``` python
 #!/usr/bin/python3
@@ -835,7 +1015,7 @@ When the above code is executed, it produces the following result −
 Good bye!
 ```
 
-## IF...ELIF...ELSE Statements
+## `if...else` Statements
 An else statement can be combined with an if statement. An else statement contains a block of code that executes if the conditional expression in the if statement resolves to 0 or a FALSE value.
 
 The else statement is an optional statement and there could be at the most only one else statement following if.
@@ -850,7 +1030,7 @@ else:
    statement(s)
 ```
 
-**Python if...else statement Example**
+### Python `if...else` statement Example
 ```python
 #!/usr/bin/python3
 
@@ -877,10 +1057,10 @@ Enter amount: 1200
 Discount 120.0
 Net payable: 1080.0
 ```
-### The elif Statement
-The elif statement allows you to check multiple expressions for TRUE and execute a block of code as soon as one of the conditions evaluates to TRUE.
+### The `elif` Statement
+The e`lif statement allows you to check multiple expressions for TRUE and execute a block of code as soon as one of the conditions evaluates to TRUE.
 
-Similar to the else, the elif statement is optional. However, unlike else, for which there can be at the most one statement, there can be an arbitrary number of elif statements following an if.
+Similar to the else, the `elif` statement is optional. However, unlike else, for which there can be at the most one statement, there can be an arbitrary number of `elif` statements following an if.
 
 **syntax**
 ```
@@ -895,7 +1075,7 @@ else:
 ```   
 Core Python does not provide switch or case statements as in other languages, but we can use if..elif...statements to simulate switch case as follows −
 
-**Example**
+### Python `if...elif...else` statement Example
 ```python
 #!/usr/bin/python3
 
@@ -928,10 +1108,10 @@ Discount 900.0
 Net payable: 5100.0
 ```
 
-## Nested IF Statements
-There may be a situation when you want to check for another condition after a condition resolves to true. In such a situation, you can use the nested if construct.
+## Nested `if` Statements
+There may be a situation when you want to check for another condition after a condition resolves to true. In such a situation, you can use the nested `if` construct.
 
->In a nested if construct, you can have an if...elif...else construct inside another if...elif...else construct.
+>In a nested `if` construct, you can have an `if...elif...else` construct inside another `if...elif...else `construct.
 
 **Syntax**
 
@@ -1001,6 +1181,13 @@ When the above code is executed, it produces the following result −
 Value of expression is 100
 Good bye!
 ```
+
+
+
+
+
+
+
 # Loops
 In general, statements are executed sequentially − The first statement in a function is executed first, followed by the second, and so on. There may be a situation when you need to execute a block of code several number of times.
 
@@ -1013,11 +1200,11 @@ Python programming language provides the following types of loops to handle loop
 
 Loop Type | Description
 ----|----
-while loop|Repeats a statement or group of statements while a given condition is TRUE. It tests the condition before executing the loop body.
-for loop|Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.
-nested loops|You can use one or more loop inside any another while, or for loop.
+`while loop`|Repeats a statement or group of statements while a given condition is TRUE. It tests the condition before executing the loop body.
+`for loop`|Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.
+`nested loops`|You can use one or more loop inside any another while, or for loop.
 
-## while Loop Statements
+## `while` Loop Statements
 A while loop statement in Python programming language repeatedly executes a target statement as long as a given condition is true.
 
 **Syntax**
@@ -1026,7 +1213,7 @@ The syntax of a while loop in Python programming language is −
 while expression:
    statement(s)
 ```
-Here, statement(s) may be a single statement or a block of statements with uniform indent. The condition may be any expression, and true is any non-zero value. The loop iterates while the condition is true.
+> Here, statement(s) may be a single statement or a block of statements with uniform indent. The condition may be any expression, and true is any non-zero value. The loop iterates while the condition is true.
 
 When the condition becomes false, program control passes to the line immediately following the loop.
 
@@ -1062,7 +1249,7 @@ Good bye!
 ```
 The block here, consisting of the print and increment statements, is executed repeatedly until count is no longer less than 9. With each iteration, the current value of the index count is displayed and then increased by 1.
 
-### The Infinite Loop
+## The Infinite Loop
 A loop becomes infinite loop if a condition never becomes FALSE. You must be cautious when using while loops because of the possibility that this condition never resolves to a FALSE value. This results in a loop that never ends. Such a loop is called an infinite loop.
 
 An infinite loop might be useful in client/server programming where the server needs to run continuously so that client programs can communicate with it as and when required.
@@ -1098,12 +1285,12 @@ KeyboardInterrupt
 ```
 The above example goes in an infinite loop and you need to use CTRL+C to exit the program.
 
-### Using else Statement with Loops
+### Using `else` Statement with Loops
 Python supports having an else statement associated with a loop statement.
 
 If the else statement is used with a for loop, the else statement is executed when the loop has exhausted iterating the list.
 
-If the else statement is used with a while loop, the else statement is executed when the condition becomes false.
+> If the else statement is used with a while loop, the else statement is executed when the condition becomes false.
 
 The following example illustrates the combination of an else statement with a while statement that prints a number as long as it is less than 5, otherwise the else statement gets executed.
 
@@ -1142,8 +1329,8 @@ print ("Good bye!")
 ```
 The above example goes into an infinite loop and you need to press CTRL+C keys to exit.
 
-## for loop Statements
-The for statement in Python has the ability to iterate over the items of any sequence, such as a list or a string.
+## `for` loop Statements
+The `for` statement in Python has the ability to iterate over the items of any sequence, such as a list or a string.
 
 **Syntax**
 ```
@@ -1166,7 +1353,7 @@ range(0, 5)
 
 **range()** generates an iterator to progress integers starting with 0 upto n-1. To obtain a list object of the sequence, it is typecasted to list(). Now this list can be iterated using the for statement.
 ```python
->>> for var in list(range(5)):
+for var in list(range(5)):
    print (var)
 ```
 **Output**
@@ -1230,7 +1417,7 @@ Good bye!
 ```
 Here, we took the assistance of the len() built-in function, which provides the total number of elements in the tuple as well as the range() built-in function to give us the actual sequence to iterate over.
 
-### Using else Statement with Loops
+### Using `else` Statement with Loops
 Python supports having an else statement associated with a loop statement.
 
 If the else statement is used with a for loop, the else block is executed only if for loops terminates normally (and not by encountering break statement).
@@ -1311,11 +1498,91 @@ Python supports the following control statements.
 
 Control Statement | Description
 ----|----
-break statement|Terminates the loop statement and transfers execution to the statement immediately following the loop.
-continue statement|Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.
-pass statement|The pass statement in Python is used when a statement is required syntactically but you do not want any command or code to execute.
+`break statement`|Terminates the loop statement and transfers execution to the statement immediately following the loop.
+`continue statement`|Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.
+`pass statement`|The pass statement in Python is used when a statement is required syntactically but you do not want any command or code to execute.
 
 Let us go through the loop control statements briefly.
+
+### `break` Keyword
+The `break` keyword is used to `break` out a `for` loop, or a `while` loop.
+
+**End the `for` loop if i is larger than 3:**
+``` py
+for i in range(9):
+  if i > 3:
+    break
+  print(i)
+```  
+
+**Break out of a `while` loop:**
+``` py
+i = 1
+while i < 9:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+```
+
+### `continue` keyword
+The `continue` keyword is used to end the current iteration in a `for` loop (or a `while` loop), and continues to the next iteration.
+
+**Skip the iteration if the variable i is 3 in for `loop`, but continue with the next iteration:**
+
+``` py
+for i in range(9):
+  if i == 3:
+    continue
+  print(i)
+```
+
+**Use the continue keyword in a while `loop`:**
+``` py
+i = 0
+while i < 9:
+  i += 1
+  if i == 3:
+    continue
+  print(i)
+```
+
+### `pass` keyword
+The `pass` statement is used as a placeholder for future code.
+
+> When the `pass` statement is executed, nothing happens, but you avoid getting an error when empty code is not allowed.
+
+Empty code is not allowed in loops, function definitions, class definitions, or in if statements.
+
+**Create a placeholder for future code:**
+
+``` py
+for x in [0, 1, 2]:
+  pass
+```
+
+**Using the pass keyword in a function definition:**
+``` py
+def myfunction():
+  pass
+```  
+
+**Using the pass keyword in a class definition:**
+```py
+class Person:
+  pass
+```
+
+**Using the pass keyword in an if statement:**
+``` py
+a = 33
+b = 200
+
+if b > a:
+  pass
+```
+
+
 
 ## Iterator and Generator
 Iterator is an object which allows a programmer to traverse through all the elements of a collection, regardless of its specific implementation. In Python, an iterator object implements two methods, iter() and next().
@@ -1364,12 +1631,99 @@ while True:
       sys.exit()
 ```      
 
-# Date & Time ?
+# `datetime` Module
+A date in Python is not a data type of its own, but we can import a module named datetime to work with dates as date objects.
+
+**Import the datetime module and display the current date:**
+``` py
+import datetime
+
+x = datetime.datetime.now()
+print(x)
+```
+When we execute the code from the example above the result will be:
+```
+2024-04-22 17:58:47.324803
+```
+The date contains year, month, day, hour, minute, second, and microsecond.
+The datetime module has many methods to return information about the date object.
+
+**Return the year and name of weekday:**
+``` py
+import datetime
+
+x = datetime.datetime.now()
+
+print(x.year)
+print(x.strftime("%A"))
+```
+
+## Creating Date Objects
+To create a date, we can use the `datetime()` class (constructor) of the datetime module.
+
+The `datetime() `class requires three parameters to create a date: year, month, day.
+
+``` py
+import datetime
+
+x = datetime.datetime(2020, 5, 17)
+
+print(x)
+```
+The `datetime()` class also takes parameters for time and timezone `(hour, minute, second, microsecond, tzone)`, but they are optional, and has a default value of `0`, (None for timezone).
+
+## The `strftime()` Method
+The datetime object has a method for formatting date objects into readable strings.
+
+The method is called `strftime()`, and takes one parameter, format, to specify the format of the returned string:
+
+**Display the name of the month:**
+``` py
+import datetime
+
+x = datetime.datetime(2018, 6, 1)
+
+print(x.strftime("%B"))
+```
+
+A reference of all format codes:
+
+Directive |	Description	| Example
+--|--|--
+`%a`	| Weekday, short version	|Wed	
+`%A`	|Weekday, full version	|Wednesday	
+`%w`	|Weekday as a number 0-6, 0 is Sunday	|3	
+`%d`	|Day of month 01-31	|31	
+`%b`	|Month name, short version	|Dec	
+`%B`	|Month name, full version	|December	
+`%m`	|Month as a number 01-12	|12	
+`%y`	|Year, short version, without century	|18	
+`%Y`	|Year, full version	|2018	
+`%H`	|Hour 00-23	|17	
+`%I`	|Hour 00-12	|05	
+`%p`	|AM/PM	|PM	
+`%M`	|Minute 00-59	|41	
+`%S`	|Second 00-59	|08	
+`%f`	|Microsecond 000000-999999	|548513	
+`%z`	|UTC offset	|+0100	
+`%Z`	|Timezone	|CST	
+`%j`	|Day number of year 001-366	|365	
+`%U`	|Week number of year, Sunday as the first day of week, 00-53	|52	
+`%W`	|Week number of year, Monday as the first day of week, 00-53	|52	
+`%c`	|Local version of date and time	Mon Dec 31 17:41:00 |2018	
+`%C`	|Century	|20	
+`%x`	|Local version of date	|12/31/18	
+`%X	`|Local version of time	|17:41:00	
+`%%`	|A % character	|%	
+`%G	`|ISO 8601 year	|2018	
+`%u`	|ISO 8601 weekday (1-7)	|1	
+`%V`	|ISO 8601 weeknumber (01-53)	|01
+
 
 # Functions
 > A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.
 
-As you already know, Python gives you many built-in functions like print(), etc. but you can also create your own functions. These functions are called user-defined functions.
+As you already know, Python gives you many built-in functions like `print()`, etc. but you can also create your own functions. These functions are called user-defined functions.
 
 ## Defining a Function
 You can define functions to provide the required functionality. Here are simple rules to define a function in Python.
@@ -1380,7 +1734,7 @@ You can define functions to provide the required functionality. Here are simple 
 
 - The first statement of a function can be an optional statement - the documentation string of the function or docstring.
 
-- The code block within every function starts with a colon (:) and is indented.
+- The code block within every function starts with a colon `:` and is indented.
 
 - The statement return [expression] exits a function, optionally passing back an expression to the caller. A return statement with no arguments is the same as return None.
 
@@ -1395,7 +1749,7 @@ By default, parameters have a positional behavior and you need to inform them in
 
 **Example**
 The following function takes a string as input parameter and prints it on standard screen.
-```
+``` py
 def printme( str ):
    "This prints a passed string into this function"
    print (str)
@@ -1596,7 +1950,7 @@ Output is:
 60
 50
 ```
-### The Anonymous Functions
+## The Anonymous Functions
 > These functions are called anonymous because they are not declared in the standard manner by using the def keyword. You can use the `lambda` keyword to create small anonymous functions.
 
 - Lambda forms can take any number of arguments but return just one value in the form of an expression. They cannot contain commands or multiple expressions.
@@ -1719,9 +2073,9 @@ Hello : Zara
 ```
  A module is loaded only once, regardless of the number of times it is imported. This prevents the module execution from happening repeatedly, if multiple imports occur.
 
-## The from...import Statement
+## The `from...import` Statement
 Python's from statement lets you import specific attributes from a module into the current namespace. The from...import has the following syntax −
-```
+``` py
 from modname import name1[, name2[, ... nameN]]
 ```
 For example, to import the function fibonacci from the module fib, use the following statement −
@@ -1742,11 +2096,11 @@ def fib(n): # return Fibonacci series up to n
 [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 ```
 This statement does not import the entire module fib into the current namespace; it just introduces the item fibonacci from the module fib into the global symbol table of the importing module.
-```
+``` py
 The from...import * Statement
 ```
 It is also possible to import all the names from a module into the current namespace by using the following import statement −
-```
+``` py
 from modname import *
 ```
 This provides an easy way to import all the items from a module into the current namespace; however, this statement should be used sparingly.
@@ -1779,22 +2133,23 @@ When you run the above code, the following output will be displayed.
 When you import a module, the Python interpreter searches for the module in the following sequences −
 
 - The current directory.
-- If the module is not found, Python then searches each directory in the shell variable PYTHONPATH.
-- If all else fails, Python checks the default path. On UNIX, this default path is normally /usr/local/lib/python3/.
+- If the module is not found, Python then searches each directory in the shell variable `PYTHONPATH`.
+- If all else fails, Python checks the default path. On UNIX, this default path is normally `/usr/local/lib/python3/`.
 
-The module search path is stored in the system module sys as the sys.path variable. The sys.path variable contains the current directory, PYTHONPATH, and the installation-dependent default.
+The module search path is stored in the system module sys as the sys.path variable. The sys.path variable contains the current directory, `PYTHONPATH`, and the installation-dependent default.
 
 ## The PYTHONPATH Variable
 The `PYTHONPATH` is an environment variable, consisting of a list of directories. The syntax of PYTHONPATH is the same as that of the shell variable PATH.
 
 Here is a typical PYTHONPATH from a Windows system −
-```
+``` shell
 set PYTHONPATH = c:\python34\lib;
 ```
 And here is a typical PYTHONPATH from a UNIX system −
-```
+``` shell
 set PYTHONPATH = /usr/local/lib/python
 ```
+
 ## Namespaces and Scoping
 Variables are names (identifiers) that map to objects. A namespace is a dictionary of variable names (keys) and their corresponding objects (values).
 
@@ -1911,8 +2266,286 @@ I'm ISDN Phone
 ```
 In the above example, we have taken example of a single function in each file, but you can keep multiple functions in your files. You can also define different Python classes in those files and then you can create your packages out of those classes.
 
-# Files I/O ?
-# Exceptions Handling ?
+# Files I/O 
+
+The key function for working with files in Python is the `open()` function.
+
+The open() function takes two parameters; filename, and mode.
+
+There are four different methods (modes) for opening a file: In addition you can specify if the file should be handled as binary or text mode
+mode| description
+--|--
+`r` | Read - Default value. Opens a file for reading, error if the file does not exist
+`a` | Append - Opens a file for appending, creates the file if it does not exist
+`w` | Write - Opens a file for writing, creates the file if it does not exist
+`x` | Create - Creates the specified file, returns an error if the file exists
+`t` | Text - Default value. Text mode
+`b` | Binary - Binary mode (e.g. images)
+
+## Open file
+To open a file for reading it is enough to specify the name of the file:
+```py
+f = open("demofile.txt")
+```
+The code above is the same as:
+``` py
+f = open("demofile.txt", "rt")
+```
+Because `r` for read, and `t` for text are the default values, you do not need to specify them. Make sure the file exists, or else you will get an error.
+
+
+## Read a file 
+To open the file, use the built-in open() function.
+
+The `open()` function returns a file object, which has a `read()` method for reading the content of the file:
+
+**Example: Read a file from same folder**
+``` py
+f = open("demofile.txt", "r")
+print(f.read())
+```
+If the file is located in a different location, you will have to specify the file path, like this:
+
+**Example: Open a file on a different location:**
+``` py
+f = open("D:\\myfiles\welcome.txt", "r")
+print(f.read())
+```
+
+### Read Only Parts of the File
+By default the `read()` method returns the whole text, but you can also specify how many characters you want to return:
+
+**Example: Return the 5 first characters of the file:**
+```py
+f = open("demofile.txt", "r")
+print(f.read(5))
+```
+
+### Read Lines
+You can return one line by using the readline() method:
+
+**Example: Read one line of the file:**
+``` py
+f = open("demofile.txt", "r")
+print(f.readline())
+```
+
+By calling readline() two times, you can read the two first lines:
+
+**Example: Read two lines of the file:**
+``` py
+f = open("demofile.txt", "r")
+print(f.readline())
+print(f.readline())
+```
+
+By looping through the lines of the file, you can read the whole file, line by line:
+
+**Example: Loop through the file line by line:**
+``` py
+f = open("demofile.txt", "r")
+for x in f:
+  print(x)
+```
+
+## Close Files
+It is a good practice to always close the file when you are done with it.
+
+**Example: Close the file when you are finish with it:**
+``` py
+f = open("demofile.txt", "r")
+print(f.readline())
+f.close()
+```
+Note: You should always close your files, in some cases, due to buffering, changes made to a file may not show until you close the file.
+
+## Write File
+
+### Write to an Existing File
+To write to an existing file, you must add a parameter to the `open()` function:
+`a` - Append - will append to the end of the file
+`w` - Write - will overwrite any existing content
+
+**Example: Open the file "demofile2.txt" and append content to the file:**
+``` PY
+f = open("demofile2.txt", "a")
+f.write("Now the file has more content!")
+f.close()
+
+#open and read the file after the appending:
+f = open("demofile2.txt", "r")
+print(f.read())
+```
+
+`Example: Open the file "demofile3.txt" and overwrite the content:`
+``` PY
+f = open("demofile3.txt", "w")
+f.write("Woops! I have deleted the content!")
+f.close()
+
+#open and read the file after the overwriting:
+f = open("demofile3.txt", "r")
+print(f.read())
+```
+
+Note: the `w` method will overwrite the entire file.
+
+### Create a New File
+To create a new file in Python, use the open() method, with one of the following parameters:
+
+| mode | type | description
+--|--|--
+`x` | Create | will create a file, returns an error if the file exist
+`a` | Append | will create a file if the specified file does not exist
+`w` | Write | will create a file if the specified file does not exist
+
+**Example: Create a file called "myfile.txt":**
+```py
+f = open("myfile.txt", "x")
+```
+```
+Result: a new empty file is created!
+```
+
+**Example: Create a new file if it does not exist:**
+```py
+f = open("myfile.txt", "w")
+```
+
+### Delete a File
+To delete a file, you must import the OS module, and run its os.remove() function:
+
+**Example:Remove the file "demofile.txt":**
+``` py
+import os
+os.remove("demofile.txt")
+```
+### Check if File exist:
+To avoid getting an error, you might want to check if the file exists before you try to delete it:
+
+**Example: Check if file exists, then delete it:**
+```py
+import os
+if os.path.exists("demofile.txt"):
+  os.remove("demofile.txt")
+else:
+  print("The file does not exist")
+```
+
+### Delete Folder
+To delete an entire folder, use the os.rmdir() method:
+
+Example: Remove the folder "myfolder":
+```py
+import os
+os.rmdir("myfolder")
+```
+
+Note: You can only remove empty folders.
+
+# Exception Handling
+
+- The `try` block lets you test a block of code for errors.
+- The `except` block lets you handle the error.
+- The `else` block lets you execute code when there is no error.
+- The `finally` block lets you execute code, regardless of the result of the try- and except blocks.
+
+When an error occurs, or exception as we call it, Python will normally stop and generate an error message.
+These exceptions can be handled using the `try` statement:
+
+## `try` block
+The try block will generate an exception, because x is not defined:
+``` py
+try:
+  print(x)
+except:
+  print("An exception occurred")
+```
+Since the try block raises an error, the except block will be executed. Without the `try` block, the program will crash and raise an error:
+
+## Many Exceptions
+You can define as many exception blocks as you want, e.g. if you want to execute a special block of code for a special kind of error:
+
+Print one message if the `try` block raises a `NameError` and another for other errors:
+``` py
+try:
+  print(x)
+except NameError:
+  print("Variable x is not defined")
+except:
+  print("Something else went wrong")
+```  
+
+## `else` block
+You can use the `else` keyword to define a block of code to be executed if no errors were raised:
+
+In this example, the try block does not generate any error:
+``` py
+try:
+  print("Hello")
+except:
+  print("Something went wrong")
+else:
+  print("Nothing went wrong")
+```  
+
+## `finally` block
+The `finally` block, if specified, will be executed regardless if the try block raises an error or not.
+
+```py
+try:
+  print(x)
+except:
+  print("Something went wrong")
+finally:
+  print("The 'try except' is finished")
+```
+
+This can be useful to close objects and clean up resources as :
+``` py
+# try to open and write to a file that is not writable:
+
+try:
+  f = open("demofile.txt")
+  try:
+    f.write("Lorum Ipsum")
+  except:
+    print("Something went wrong when writing to the file")
+  finally:
+    f.close()
+except:
+  print("Something went wrong when opening the file")
+
+```
+
+## Raise an exception
+As a Python developer you can choose to throw an exception if a condition occurs.
+
+To `throw` (or `raise`) an exception, use the raise keyword.
+
+**Example**
+Raise an error and stop the program if x is lower than 0:
+``` py
+x = -1
+
+if x < 0:
+  raise Exception("Sorry, no numbers below zero")
+```
+
+The raise keyword is used to raise an exception.
+
+You can define what kind of error to raise, and the text to print to the user.
+
+**Example**
+Raise a TypeError if x is not an integer:
+```py
+x = "hello"
+
+if not type(x) is int:
+  raise TypeError("Only integers are allowed")
+```
+
+
 
 # Object Oriented Python
 Python has been an object-oriented language since the time it existed. Due to this, creating and using classes and objects are downright easy. This chapter helps you become an expert in using Python's object-oriented programming support.
@@ -1922,27 +2555,27 @@ If you do not have any previous experience with object-oriented (OO) programming
 However, here is a small introduction of Object-Oriented Programming (OOP) to help you −
 
 ## Overview of OOP Terminology
-- Class − A user-defined prototype for an object that defines a set of attributes that characterize any object of the class. The attributes are data members (class variables and instance variables) and methods, accessed via dot notation.
+- **Class** − A user-defined prototype for an object that defines a set of attributes that characterize any object of the class. The attributes are data members (class variables and instance variables) and methods, accessed via dot notation.
 
-- Class variable − A variable that is shared by all instances of a class. Class variables are defined within a class but outside any of the class's methods. Class variables are not used as frequently as instance variables are.
+- **Class variable** − A variable that is shared by all instances of a class. Class variables are defined within a class but outside any of the class's methods. Class variables are not used as frequently as instance variables are.
 
-- Data member − A class variable or instance variable that holds data associated with a class and its objects.
+- **Data member** − A class variable or instance variable that holds data associated with a class and its objects.
 
-- Function overloading − The assignment of more than one behavior to a particular function. The operation performed varies by the types of objects or arguments involved.
+- **Function overloading** − The assignment of more than one behavior to a particular function. The operation performed varies by the types of objects or arguments involved.
 
-- Instance variable − A variable that is defined inside a method and belongs only to the current instance of a class.
+- **Instance variable** − A variable that is defined inside a method and belongs only to the current instance of a class.
 
-- Inheritance − The transfer of the characteristics of a class to other classes that are derived from it.
+- **Inheritance** − The transfer of the characteristics of a class to other classes that are derived from it.
 
-- Instance − An individual object of a certain class. An object obj that belongs to a class Circle, for example, is an instance of the class Circle.
+- **Instance** − An individual object of a certain class. An object obj that belongs to a class Circle, for example, is an instance of the class Circle.
 
-- Instantiation − The creation of an instance of a class.
+- **Instantiation** − The creation of an instance of a class.
 
-- Method − A special kind of function that is defined in a class definition.
+- **Method** − A special kind of function that is defined in a class definition.
 
-- Object − A unique instance of a data structure that is defined by its class. An object comprises both data members (class variables and instance variables) and methods.
+- **Object** − A unique instance of a data structure that is defined by its class. An object comprises both data members (class variables and instance variables) and methods.
 
-- Operator overloading − The assignment of more than one function to a particular operator.
+- **Operator overloading** − The assignment of more than one function to a particular operator.
 
 ## Creating Classes
 The class statement creates a new class definition. The name of the class immediately follows the keyword class followed by a colon as follows −
@@ -1981,7 +2614,7 @@ You declare other class methods like normal functions with the exception that th
 
 ## Creating Instance Objects
 To create instances of a class, you call the class using class name and pass in whatever arguments its `__init__` method accepts.
-```
+``` py
 #This would create first object of Employee class
 emp1 = Employee("Zara", 2000)
 #This would create second object of Employee class
@@ -1989,7 +2622,7 @@ emp2 = Employee("Manni", 5000)
 ```
 ## Accessing Attributes
 You access the object's attributes using the dot operator with object. Class variable would be accessed using class name as follows −
-```
+``` py
 emp1.displayEmployee()
 emp2.displayEmployee()
 print ("Total Employee %d" % Employee.empCount)
@@ -2034,14 +2667,12 @@ emp1.salary = 7000  # Add an 'salary' attribute.
 emp1.name = 'xyz'  # Modify 'age' attribute.
 del emp1.salary  # Delete 'age' attribute.
 ```
+
 Instead of using the normal statements to access attributes, you can use the following functions −
 
 - The `getattr(obj, name[, default])` − to access the attribute of object.
-
 - The `hasattr(obj,name)` − to check if an attribute exists or not.
-
 - The `setattr(obj,name,value)` − to set an attribute. If attribute does not exist, then it would be created.
-
 - The `delattr(obj, name)` − to delete an attribute.
 ```
 hasattr(emp1, 'salary')    # Returns true if 'salary' attribute exists
@@ -2052,15 +2683,14 @@ delattr(emp1, 'salary')    # Delete attribute 'salary'
 ## Built-In Class Attributes
 Every Python class keeps following built-in attributes and they can be accessed using dot operator like any other attribute −
 
-`__dict__` − Dictionary containing the class's namespace.
+Attribute | Description
+--|--
+`__dict__` | Dictionary containing the class's namespace.
+`__doc__` | Class documentation string or none, if undefined.
+`__name__` | Class name.
+`__module__` | Module name in which the class is defined. This attribute is `"__main__"` in interactive mode.
+`__bases__` | A possibly empty tuple containing the base classes, in the order of their occurrence in the base class list.
 
-`__doc__` − Class documentation string or none, if undefined.
-
-`__name__` − Class name.
-
-`__module__` − Module name in which the class is defined. This attribute is `"__main__"` in interactive mode.
-
-`__bases__` − A possibly empty tuple containing the base classes, in the order of their occurrence in the base class list.
 
 For the above class let us try to access all these attributes −
 ```python
@@ -2106,13 +2736,15 @@ Employee.__dict__: {
    <attribute '__dict__' of 'Employee' objects>
 }
 ```
+
+
 ## Destroying Objects (Garbage Collection)
 Python deletes unneeded objects (built-in types or class instances) automatically to free the memory space. The process by which Python periodically reclaims blocks of memory that no longer are in use is termed as Garbage Collection.
 
 > Python's garbage collector runs during program execution and is triggered when an object's reference count reaches zero. An object's reference count changes as the number of aliases that point to it changes.
 
 An object's reference count increases when it is assigned a new name or placed in a container (list, tuple, or dictionary). The object's reference count decreases when it is deleted with del, its reference is reassigned, or its reference goes out of scope. When an object's reference count reaches zero, Python collects it automatically.
-```
+``` py
 a = 40      # Create object <40>
 b = a       # Increase ref. count  of <40> 
 c = [b]     # Increase ref. count  of <40> 
@@ -2156,18 +2788,22 @@ In the above example, assuming definition of a Point class is contained in `poin
 #!/usr/bin/python3
 import point
 p1 = point.Point()
-Class Inheritance
+```
+
+## Class Inheritance
 Instead of starting from a scratch, you can create a class by deriving it from a pre-existing class by listing the parent class in parentheses after the new class name.
 
 The child class inherits the attributes of its parent class, and you can use those attributes as if they were defined in the child class. A child class can also override data members and methods from the parent.
 
-Syntax
+**Syntax**
 Derived classes are declared much like their parent class; however, a list of base classes to inherit from is given after the class name −
-
+```
 class SubClassName (ParentClass1[, ParentClass2, ...]):
    'Optional class documentation string'
    class_suite
+```
 Example
+``` py
 #!/usr/bin/python3
 
 class Parent:        # define parent class
@@ -2197,6 +2833,8 @@ c.parentMethod()     # calls parent's method
 c.setAttr(200)       # again call parent's method
 c.getAttr()          # again call parent's method
 ```
+
+
 When the above code is executed, it produces the following result −
 ```
 Calling child constructor
@@ -2204,14 +2842,13 @@ Calling child method
 Calling parent method
 Parent attribute : 200
 ```
+
 In a similar way, you can drive a class from multiple parent classes as follows −
 ```
 class A:        # define your class A
 .....
-
 class B:         # define your calss B
 .....
-
 class C(A, B):   # subclass of A and B
 .....
 ```
@@ -2584,10 +3221,10 @@ Example | Description
 
 ### Alternatives
 Example | Description
-----|----
-`python|perl`|Match "python" or "perl"
-`rub(y|le)`|Match "ruby" or "ruble"
-`Python(!+|\?)`|"Python" followed by one or more ! or one ?
+--|--
+`python\|perl`|Match "python" or "perl"
+`rub(y\|le)`|Match "ruby" or "ruble"
+`Python(!+\|\?)`|"Python" followed by one or more ! or one ?
 
 ### Anchors
 This needs to specify match position.
@@ -2610,3 +3247,270 @@ Example | Description
 `R(?i)uby`|Case-insensitive while matching "uby"
 `R(?i:uby)`|Same as above
 `rub(?:y|le))`|Group only without creating \1 backreference
+
+
+
+# Context Manager
+
+While Python’s context managers are widely used, few understand the purpose behind their use. These statements, commonly used with reading and writing files, assist the application in conserving system memory and improve resource management by ensuring specific resources are only in use for certain processes.
+
+## The with statement
+A context manager is an object that is notified when a context (a block of code) starts and ends. You commonly use one with the with statement. It takes care of the notifying.
+
+For example, file objects are context managers. When a context ends, the file object is closed automatically:
+``` py
+with open(filename) as f:
+    file_contents = f.read()
+
+# the open_file object has automatically been closed.
+```
+
+Anything that ends execution of the block causes the context manager’s exit method to be called. This includes exceptions, and can be useful when an error causes you to prematurely exit an open file or connection. Exiting a script without properly closing files/connections is a bad idea, that may cause data loss or other problems. By using a context manager, you can ensure that precautions are always taken to prevent damage or loss in this way.
+
+## Writing your own context manager
+It is also possible to write a context manager using generator syntax thanks to the contextlib.contextmanager decorator:
+``` py
+import contextlib
+
+@contextlib.contextmanager
+def context_manager(num):
+    print('Enter')
+    yield num + 1
+    print('Exit')
+
+with context_manager(2) as cm:
+    # the following instructions are run when
+    # the 'yield' point of the context manager is
+    # reached. 'cm' will have the value that was yielded
+    print('Right in the middle with cm = {}'.format(cm))
+...
+# Enter
+# Right in the middle with cm = 3
+# Exit
+```
+
+## Class based context manager
+You can define class based context manager. The key methods are __enter__ and __exit__
+``` py
+class ContextManager:
+    def __enter__(self, *args, **kwargs):
+        print("--enter--")
+
+    def __exit__(self, *args):
+        print("--exit--")
+
+
+with ContextManager():
+    print("test")
+#--enter--
+#test
+#--exit--
+```
+
+# Python Decorators
+
+> A Python Decorator provides a concise and reusable way for extending a function or a class.
+
+## Bare bone decorator
+A decorator in its simplest form is a function that takes another function as an argument and returns a wrapper. The following example shows the creation of a decorator and its usage.
+``` py
+def your_decorator(func):
+  def wrapper():
+    # Do stuff before func...
+    print("Before func!")
+    func()
+    # Do stuff after func...
+    print("After func!")
+  return wrapper
+
+@your_decorator
+def foo():
+  print("Hello World!")
+
+foo()
+# Before func!
+# Hello World!
+# After func!
+```
+## Decorator for a function with parameters
+
+``` py
+def your_decorator(func):
+  def wrapper(*args,**kwargs):
+    # Do stuff before func...
+    print("Before func!") 
+    func(*args,**kwargs)
+    # Do stuff after func...
+    print("After func!")
+  return wrapper
+
+@your_decorator
+def foo(bar):
+  print("My name is " + bar)
+
+foo("Jack")
+
+# Before func!
+# My name is Jack
+# After func!
+```
+## Template for a basic decorator
+This template is useful for most decorator use-cases. It is valid for functions with or without parameters, and with or without a return value.
+``` py
+import functools
+
+def your_decorator(func):
+  @functools.wraps(func) # For preserving the metadata of func.
+  def wrapper(*args,**kwargs):
+    # Do stuff before func...
+    result = func(*args,**kwargs)
+    # Do stuff after func..
+    return result
+  return wrapper
+```
+
+## Decorator with parameters
+You can also define parameters for the decorator to use.
+
+``` py
+import functools
+
+def your_decorator(arg):
+  def decorator(func):
+    @functools.wraps(func) # For preserving the metadata of func.
+    def wrapper(*args,**kwargs):
+      # Do stuff before func possibly using arg...
+      result = func(*args,**kwargs)
+      # Do stuff after func possibly using arg...
+      return result
+    return wrapper
+  return decorator
+```
+
+To use this decorator:
+``` py
+@your_decorator(arg = 'x')
+def foo(bar):
+  return bar
+```
+## Class based decorators
+A decorator can also be defined as a class instead of a method. This is useful for maintaining and updating a state, such as in the following example, where we count the number of calls made to a method:
+
+``` py
+class CountCallNumber:
+
+  def __init__(self, func):
+    self.func = func
+    self.call_number = 0
+
+  def __call__(self, *args, **kwargs):
+    self.call_number += 1
+    print("This is execution number " + str(self.call_number))
+    return self.func(*args, **kwargs)
+
+@CountCallNumber
+def say_hi(name):
+  print("Hi! My name is " + name)
+
+say_hi("Jack")
+# This is execution number 1
+# Hi! My name is Jack
+
+say_hi("James")
+# This is execution number 2
+# Hi! My name is James
+```
+
+# Dataclasses
+
+Dataclasses are python classes, but are suited for storing data objects. This module provides a decorator and functions for automatically adding generated special methods such as `__init__()` and `__repr__()` to user-defined classes.
+
+## Features
+They store data and represent a certain data type. Ex: A number. For people familiar with ORMs, a model instance is a data object. It represents a specific kind of entity. It holds attributes that define or represent the entity.
+
+They can be compared to other objects of the same type. Ex: A number can be greater than, less than, or equal to another number.
+
+Python 3.7 provides a decorator dataclass that is used to convert a class into a dataclass.
+``` py
+class Number:
+    def __init__(self, val):
+        self.val = val
+
+obj = Number(2)
+obj.val
+# 2
+```
+with **dataclass**
+``` py
+@dataclass
+class Number:
+    val: int
+
+obj = Number(2)
+obj.val
+# 2
+```
+## Default values
+It is easy to add default values to the fields of your data class.
+``` py
+@dataclass
+class Product:
+    name: str
+    count: int = 0
+    price: float = 0.0
+
+obj = Product("Python")
+obj.name
+# Python
+
+obj.count
+# 0
+
+obj.price
+# 0.0
+```
+
+## Type hints
+It is mandatory to define the data type in dataclass. However, If you would rather not specify the datatype then, use typing.Any.
+``` py
+from dataclasses import dataclass
+from typing import Any
+
+@dataclass
+class WithoutExplicitTypes:
+   name: Any
+   value: Any = 42
+```
+
+# Main top-level script environment
+
+## What is it
+`__main__` is the name of the scope in which top-level code executes. A module’s name is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
+
+A module can discover whether it is running in the main scope by checking its own `__name__`, which allows a common idiom for conditionally executing code in a module. When it is run as a script or with python -m but not when it is imported:
+
+``` py
+if __name__ == "__main__":
+    # execute only if run as a script
+    main()
+```
+
+For a package, the same effect can be achieved by including a main.py module, the contents of which will be executed when the module is run with -m.
+
+For example, we are developing a script designed to be used as a module, we should do:
+``` py
+def add(a, b):
+    return a+b
+
+if __name__ == "__main__":
+    add(3, 5)
+```
+## Advantages
+Every Python module has it’s `__name__` defined and if this is `__main__`, it implies that the module is run standalone by the user, and we can do corresponding appropriate actions.
+
+If you import this script as a module in another script, the name is set to the name of the script/module.
+
+Python files can act as either reusable modules, or as standalone programs.
+`if __name__ == "__main__"`: is used to execute some code only if the file is run directly, and is not being imported.
+
+---
