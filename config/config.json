@@ -1,0 +1,10 @@
+{
+    "app_name": "MyApp",
+    "version": "1.0",
+    "debug": true,
+    "max_connections": 100,
+    "newobj":{
+        "name":"iamthis",
+        "age":10
+    }
+}
